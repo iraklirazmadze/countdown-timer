@@ -1,0 +1,254 @@
+body{
+  background-image: url("../images/bg-stars.svg");
+  background-color: hsl(234, 17%, 12%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  margin: 142px 6.4% 55px 6.4%;
+  font-family: Red Hat Text;
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 6.136363506317139px;
+text-align: center;
+color: white;
+
+}
+
+.boxes{
+  width: 87.2%;
+  display: flex;
+  column-gap: 24px;
+  display: flex;
+  justify-content: center;
+}
+.box-top{
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  
+ 
+}
+hr{
+  position: absolute;
+  width: 100%;
+  align-self: center;
+  z-index: 2;
+  border: 1px solid black;
+  opacity: 23%;
+}
+.sircle-left{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  left:0;
+  top:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+.sircle-right{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  left:100%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+.main-box{
+  width: 21.4%;
+  max-width: 150px;
+  max-height: 148px;
+  background-color:   rgba(52, 54, 80, 1);
+  box-shadow: 0px 5px 10px black;
+  border-radius: 4px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  
+  
+}
+
+.number{
+  position: absolute;
+  font-family: Red Hat Text;
+font-size: 36px;
+font-weight: 700;
+line-height: 71px;
+letter-spacing: -1.0800000429153442px;
+text-align: center;
+color:rgba(251, 94, 132, 1);
+align-self: center;
+animation-name: none;
+animation-duration: 1s line;
+animation-iteration-count: infinite;
+}
+
+  @keyframes example {
+    0% {top: -50%; transform: translate(0,-50%);}
+    50% {top:50%;transform: translate(0,-50%)}
+    100% {top:100%;}
+  }
+
+  @keyframes as {
+    0% {top: -50%; transform: translate(0,-50%);}
+   
+    100% {top: 50%; transform: translate(0,-50%);}
+  }
+
+  
+
+
+.labels{
+  margin-top: 15px;
+  display: flex;
+  width: 87%;
+  column-gap: 24px;
+  justify-content: center;
+
+}
+p{
+  width: 21.4%;
+  max-width: 150px;
+  font-family: Red Hat Text;
+font-size: 7px;
+font-weight: 700;
+line-height: 9px;
+letter-spacing: 2.9593749046325684px;
+text-align: center;
+color: #8385A9;
+}
+
+footer{
+  width: 100%;
+  height: 170px;
+  background: url("../images/pattern-hills.svg");
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  column-gap: 32px;
+  justify-content: center;
+  padding-top: 100px;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.inputs{
+  margin-top: 15px;
+  display: flex;
+  width: 87.2%;
+  column-gap: 24px;
+  row-gap: 24px;
+  justify-content: center;
+  
+
+}
+
+ input{
+  width: 21.4%;
+  max-width: 150px;
+  background-color: rgba(52, 54, 80, 1);
+  border: 0;
+  color: white;
+  font-family: 'Red Hat Text';
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 6.136363506317139px;
+text-align: right;
+box-sizing: border-box;
+display: flex;
+border-radius: 4px;
+
+
+}
+::placeholder{
+  color: white;
+  opacity: 50%;
+  font-family: Red Hat Text;
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 0px;
+transform: translate(10px,0);
+text-align: center;
+align-self: center;
+}
+
+.starter{
+  width: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.starter p{
+  width:auto;
+  font-size: 15px;
+}
+
+button{
+  height: 30px;
+  margin-top: 24px;
+  background-color: rgba(52, 54, 80, 1);
+  color: rgba(251, 94, 132, 1);
+  border-radius: 8px;
+  border: 0;
+  font-family: Red Hat Text;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 6.136363506317139px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.buttons{
+  display: flex;
+  column-gap: 32px;
+}
+button:hover{
+  background-color: black;
+  cursor: pointer;
+}
+input:hover{
+  cursor: pointer;
+}
+svg:hover{
+  cursor: pointer;
+}
+.fb-hover, .x-hover, .insta-hover{
+  display: none;
+}
+
+@media screen and (min-width:1200px){
+  h1{
+    font-size: 22px;
+    line-height: 30px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .starter p{
+    font-size: 20px;
+  }
+  button{
+    font-size: 25px;
+  }
+  .number{
+    font-size: 80px;
+    line-height: 71px;
+  }
+ 
+}
+
